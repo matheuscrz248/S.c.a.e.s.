@@ -46,11 +46,12 @@ login/
 │   ├── main_view.py
 │   └── register_view.py
 └── README.md
-
+```
 
 ## Adendos
 
 O projeto NÃO POSSUI criptografia pra senhas.
+
 
 ## Autor
 

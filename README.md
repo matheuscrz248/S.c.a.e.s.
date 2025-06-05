@@ -40,7 +40,7 @@ login/
 ├── db/                    # Banco de dados SQLite
 │   └── database.py
 ├── model/                 # Usuário
-│   └── database.py
+│   └── user.py
 ├── view/                  # Telas e interface gráfica
 │   ├── login_view.py      # Arquivo que deverá ser executado
 │   ├── main_view.py

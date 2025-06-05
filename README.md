@@ -24,7 +24,9 @@ Este projeto é um sistema simples de controle de aluguéis de equipamentos de s
 
 1. Baixe o código ou clone o repositório:
 
+```plaintext
 git clone https://github.com/matheuscrz248/S.c.a.e.s..git
+```
 
 2. Instale o Python 3, se ainda não tiver.
 

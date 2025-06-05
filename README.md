@@ -2,13 +2,15 @@
 
 Este projeto é um sistema simples de controle de aluguéis de equipamentos de som utilizando Python, com suporte a múltiplos usuários, interface gráfica e banco de dados local.
 
+
 ## Funcionalidades
 
 - Registro e login de usuário
-- Cadastro, edição e remoção de aluguéis para cada usuário
+- Cadastro, edição e remoção de aluguéis por usuário
 - Geração de relatórios individuais por usuário
 - Interface gráfica com Tkinter
 - Banco de dados SQLite
+
 
 ## Tecnologias utilizadas na criação
 
@@ -16,6 +18,7 @@ Este projeto é um sistema simples de controle de aluguéis de equipamentos de s
 - Tkinter (já incluso no Python)
 - SQLite (biblioteca padrão do Python)
 - VS Code
+
 
 ## Como executar o projeto
 
@@ -27,21 +30,23 @@ git clone https://github.com/matheuscrz248/S.c.a.e.s..git
 
 3. Execute o arquivo chamado "login_view.py" dentro da pasta SCAES/login/view.
 
+
 ## Estrutura do projeto
 
-login
-│
-├── controller/ # Lógica de autenticação
+```plaintext
+login/
+├── controller/            # Lógica de autenticação
 │   └── auth_controller.py
-├── db/ # Banco de dados SQLite
+├── db/                    # Banco de dados SQLite
 │   └── database.py
-├── model/ # Usuário
+├── model/                 # Usuário
 │   └── database.py
-├── view/ # Telas e interface gráfica
-│   └── login_view.py (Arquivo que deverá ser executado)
-│   └── main_view.py
+├── view/                  # Telas e interface gráfica
+│   ├── login_view.py      # Arquivo que deverá ser executado
+│   ├── main_view.py
 │   └── register_view.py
 └── README.md
+
 
 ## Adendos
 

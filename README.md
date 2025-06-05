@@ -21,7 +21,7 @@ Este projeto é um sistema simples de controle de aluguéis de equipamentos de s
 
 1. Baixe o código ou clone o repositório:
 
-git clone https://github.com/matheuscrz248/Sistema_de_controle_de_aluguéis_de_equipamentos_de_som.git
+git clone https://github.com/matheuscrz248/S.c.a.e.s..git
 
 2. Instale o Python 3, se ainda não tiver.
 

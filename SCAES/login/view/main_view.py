@@ -15,7 +15,7 @@ class MainView(tk.Tk):
 
         self.title("Sistema de controle de aluguéis de equipamentos de som")
         self.geometry("850x500")
-        self.config(bg='#5f3e34')
+        self.config(bg='#22222c')
         self.minsize(700, 400)
         self.grid_rowconfigure(1, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -47,12 +47,12 @@ class MainView(tk.Tk):
             self,
             text=f"Bem-vindo à tela principal, {self.user.nome}!",
             font=("Helvetica", 16, "bold"),
-            bg="#5f3e34",
+            bg="#22222c",
             fg="#FFFFFF"
         )
         welcome_label.grid(row=0, column=0, pady=(20, 10), sticky="n")
 
-        tabela_frame = tk.Frame(self, bg="#5f3e34")
+        tabela_frame = tk.Frame(self, bg="#22222c")
         tabela_frame.grid(row=1, column=0, sticky="nsew", padx=20, pady=(10, 10))
         tabela_frame.grid_rowconfigure(0, weight=1)
         tabela_frame.grid_columnconfigure(0, weight=1)
@@ -90,7 +90,7 @@ class MainView(tk.Tk):
 
         self.tree.bind("<Double-1>", self.selecionar_dado)
 
-        botoes = tk.Frame(self, bg="#5f3e34")
+        botoes = tk.Frame(self, bg="#22222c")
         botoes.grid(row=2, column=0, pady=5)
 
         estilo_botao = {"width": 12, "height": 1, "font": ("Arial", 12, "bold")}
@@ -115,7 +115,7 @@ class MainView(tk.Tk):
         self.bind("<Configure>", lambda e: sair_btn.place(x=20, y=self.winfo_height() - 40))
 
         mensagem = tk.Label(self, text="Para alterar clique duas vezes na seleção.",
-                            bg="#5f3e34", fg="white", font=("Arial", 10))
+                            bg="#22222c", fg="white", font=("Arial", 10))
         mensagem.grid(row=3, column=0, pady=(5, 10))
 
     def gerar_relatorio(self):

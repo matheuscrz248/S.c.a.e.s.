@@ -13,7 +13,7 @@ class LoginView(tk.Tk):
         super().__init__()
         self.title("Sistema de controle de aluguéis de equipamentos de som")
         self.geometry("490x400")
-        self.config(bg="#5f3e34")
+        self.config(bg="#22222c")
         self.auth_controller = AuthController()
         self.centralizar_janela()
         self.create_widgets()
@@ -28,38 +28,39 @@ class LoginView(tk.Tk):
 
     def create_widgets(self):
         title_label = tk.Label(
-            self, text = "Acessar painel", font = ("Helvetica", 20, "bold"), bg = "#5f3e34", fg = "#FFFFFF"
+            self, text="Acessar painel", font=("Helvetica", 20, "bold"), bg="#22222c", fg="#FFFFFF"
         )
         title_label.pack(pady=15)
 
-        tk.Label(self, text = "Nome de usuário:", fg  = "#f0f0f0", bg = "#5f3e34", font = ("Helvetica", 12, "bold")).pack(pady = (30, 1), padx = 50)
-        self.entry_nomeusuario = tk.Entry(self, font = ("Helvetica", 12), width = 30)
+        tk.Label(self, text="Nome de usuário:", fg="#f0f0f0", bg="#22222c", font=("Helvetica", 12, "bold")).pack(
+            pady=(30, 1), padx=50)
+        self.entry_nomeusuario = tk.Entry(self, font=("Helvetica", 12), width=30)
         self.entry_nomeusuario.pack(pady=5)
 
-        tk.Label(self, text = "Senha:", fg  = "#f0f0f0", bg = "#5f3e34", font = ("Helvetica", 12, "bold")).pack(pady = (15, 1))
-        self.entry_senha = tk.Entry(self, show = "*", font = ("Helvetica", 12), width = 30)
+        tk.Label(self, text="Senha:", fg="#f0f0f0", bg="#22222c", font=("Helvetica", 12, "bold")).pack(pady=(15, 1))
+        self.entry_senha = tk.Entry(self, show="*", font=("Helvetica", 12), width=30)
         self.entry_senha.pack(pady=5)
 
         btn_login = tk.Button(
             self,
-            text = "Entrar",
-            command = self.login,
-            bg = "#007acc",
-            fg = "#ffffff",
-            font = ("Helvetica", 15),
-            width = 20,
-            pady = 10,
+            text="Entrar",
+            command=self.login,
+            bg="#513063",
+            fg="#ffffff",
+            font=("Helvetica", 15),
+            width=20,
+            pady=10,
         )
-        btn_login.pack(pady = (30, 3))
+        btn_login.pack(pady=(30, 3))
 
         btn_register = tk.Button(
             self,
-            text = "Registrar",
-            command = self.abrir_tela_cadastro,
-            bg = "#41dc8e",
-            fg = "#007acc",
-            font = ("Helvetica", 14),
-            width = 15,
+            text="Registrar",
+            command=self.abrir_tela_cadastro,
+            bg="#392344",
+            fg="#ffffff",
+            font=("Helvetica", 13),
+            width=14,
         )
         btn_register.pack(pady=10)
 
@@ -70,7 +71,7 @@ class LoginView(tk.Tk):
         if not nomeusuario or not senha:
             messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
             return
-    
+
         sucesso, user, msg = self.auth_controller.login(nomeusuario, senha)
         if sucesso:
             messagebox.showinfo("Sucesso", msg)
@@ -82,13 +83,15 @@ class LoginView(tk.Tk):
     def abrir_tela_cadastro(self):
         self.destroy()
         RegisterView()
+
+
 import sys
 import os
 
-
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from view.register_view import RegisterView 
+from view.register_view import RegisterView
+
 if __name__ == "__main__":
     app = LoginView()
     app.mainloop()

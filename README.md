@@ -1,6 +1,6 @@
 # Sistema de Controle de Aluguéis de Equipamentos de Som 🎧
 
-Este projeto é um sistema simples de controle de aluguéis de equipamentos de som utilizando Python, com suporte a múltiplos usuários, interface gráfica e banco de dados local.
+Este projeto é um sistema de controle de aluguéis de equipamentos de som, com suporte a múltiplos usuários, interface gráfica e banco de dados local.
 
 
 ## Funcionalidades
